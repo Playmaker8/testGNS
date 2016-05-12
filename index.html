@@ -6,6 +6,8 @@
 	<script src="controllers/MainController.js"></script>
 </head>
 <body ng-controller="MainController as vm">
-	<div></div>
+	<div ng-repeat="player in vm.data.players">
+		{{player.player}}
+	</div>
 </body>
 </html>
